@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Fragment } from 'react';
 import styled from 'styled-components';
-import { Forecast } from './Forecast';
+import Forecast from './Forecast';
+import Loading from './Loading';
 import marker from '../img/marker.svg';
-import { Loading } from './Loading';
 
 
 export default function DisplayWeather(props) {

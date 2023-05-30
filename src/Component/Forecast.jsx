@@ -7,7 +7,7 @@ const rtf = new Intl.RelativeTimeFormat("ko", {
     style: "long", // other values: "short" or "narrow"
 });
 
-export const Forecast = ({ forecastValue }) => {
+export default function Forecast({ forecastValue }) {
     return (
         <Cast>
             {forecastValue.map((item, index) => {
