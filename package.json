@@ -1,5 +1,6 @@
 {
   "name": "weatherapp",
+  "homepage": "https://jaycode-git.github.io/weatherSPA/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +13,7 @@
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.11",
+    "styled-normalize": "^8.0.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
