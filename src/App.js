@@ -4,31 +4,47 @@ import DisplayWeather from './Component/DisplayWeather';
 import Search from './Component/Search';
 import styled from 'styled-components';
 import GlobalStyle from './Component/GlobalStyle';
-
+import home from './img/home.svg'
+import search from './img/search.svg'
 
 export default function App() {
   const [inputLocation, setInputLocation] = useState('');
   const [preInput, setPreInput] = useState('');
 
-  const Nav = styled(Link)`
-    display: inline-block;
-    text-decoration: none;
-    padding: 20px;
-  `
+  const currentTime = new Intl.DateTimeFormat('en', { hour: '2-digit', hourCycle: 'h23' }).format(new Date())
 
   return (
     <>
-      <GlobalStyle />
-      <h1>WEATHER REPORT</h1>
+      <GlobalStyle times={currentTime} />
+      <h1 className='a11y-hidden'>WEATHER REPORT</h1>
       <BrowserRouter>
-        <Nav to="/">홈</Nav>
-        <Nav to="/search/">검색</Nav>
+        <Header>
+          <Nav icon="home" to="/">
+            <span className="a11y-hidden">홈</span>
+          </Nav>
+          <Nav icon="search" to="/search/">
+            <span className="a11y-hidden">검색</span>
+          </Nav>
+        </Header>
 
+        <h2 className="a11y-hidden">날씨 정보</h2>
         <Routes>
-          <Route path="/" element={<DisplayWeather value={inputLocation} />} />
+          <Route path="" element={<DisplayWeather inputLocation={inputLocation} />} />
           <Route path="/search" element={<Search setInputLocation={setInputLocation} preInput={preInput} setPreInput={setPreInput} />} />
+
         </Routes>
       </BrowserRouter>
     </>
   );
 }
+
+const Header = styled.header`
+    display: flex;
+    justify-content: flex-end;
+`
+const Nav = styled(Link)`
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url(${(props) => (props.icon === "home" ? home : search)})no-repeat center;
+`
