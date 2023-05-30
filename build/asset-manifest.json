@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/weatherSPA/static/js/main.c44d20dd.js",
+    "static/media/home.svg": "/weatherSPA/static/media/home.733f85ad7ac00e5fdd21a92a5e849da2.svg",
+    "static/media/marker.svg": "/weatherSPA/static/media/marker.9e038ddd14b63feb655d90c7c70a711d.svg",
+    "index.html": "/weatherSPA/index.html",
+    "static/media/search.svg": "/weatherSPA/static/media/search.93bd05e6ecfd266523832da1e486acce.svg",
+    "main.c44d20dd.js.map": "/weatherSPA/static/js/main.c44d20dd.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c44d20dd.js"
+  ]
+}
