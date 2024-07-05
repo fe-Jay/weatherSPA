@@ -87,6 +87,7 @@ export default function DisplayWeather(props) {
 
     useEffect(() => {
         getWeather();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
 
