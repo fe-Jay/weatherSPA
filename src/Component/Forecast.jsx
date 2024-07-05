@@ -12,15 +12,13 @@ export default function Forecast({ forecastValue }) {
         <Cast>
             {forecastValue.map((item, index) => {
                 return (
-                    <li className="feature-weather" key={index}>
+                    <li className='feature-weather' key={index}>
                         <h3>
                             {rtf.format(index + 1, "day")}
-                            <span>
-                                {item.dt_txt.slice(5, 10)}
-                            </span>
+                            <span>{item.dt_txt.slice(5, 10)}</span>
                         </h3>
-                        <img src={`${process.env.PUBLIC_URL}/assets/img/${item.weather[0].icon}.png`} alt="" />
-                        <h2>{item.main.temp}°C</h2>
+                        <img src={`${process.env.PUBLIC_URL}/assets/img/${item.weather[0].icon}.png`} alt='' />
+                        <h2>{parseInt(item.main.temp)}°C</h2>
                         <span>{item.weather[0].description}</span>
                     </li>
                 );

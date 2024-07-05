@@ -23,7 +23,7 @@ export default function App() {
       <h1 className='a11y-hidden'>WEATHER REPORT</h1>
       <BrowserRouter>
         <Header>
-          <Nav icon="home" to="/weatherSPA">
+          <Nav icon="home" to="/">
             <span className="a11y-hidden">홈</span>
           </Nav>
           <Nav icon="search" to="/search/">
@@ -33,7 +33,7 @@ export default function App() {
 
         <h2 className="a11y-hidden">날씨 정보</h2>
         <Routes>
-          <Route path="/weatherSPA" element={<DisplayWeather inputLocation={inputLocation} />} />
+          <Route path="/" element={<DisplayWeather inputLocation={inputLocation} />} />
           <Route path="/search" element={<Search setInputLocation={setInputLocation} preInput={preInput} setPreInput={setPreInput} />} />
         </Routes>
       </BrowserRouter>

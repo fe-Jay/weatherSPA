@@ -106,7 +106,7 @@ export default function DisplayWeather(props) {
                                 alt={`${weatherValue.weather[0].description}`}
                             />
                             <h3>
-                                {weatherValue.main.temp}°C
+                                {parseInt(weatherValue.main.temp)}°C
                             </h3>
                             <h4>현재 날씨는 <strong>{weatherValue.weather[0].description}</strong> 상태입니다.</h4>
                             <ul>
