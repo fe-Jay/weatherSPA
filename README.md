@@ -1,6 +1,7 @@
 # weatherSPA
 
 ### 공공 API로 날씨 위젯 만들기
+<a href="https://jayweather.netlify.app" target="_blank">🔗날씨 위젯 바로가기</a>
 
 <br/>
 <br/>
