@@ -15,7 +15,7 @@
 
 <br/>
 
-![Image](https://github.com/JAYCODE-git/testRepo/assets/22652668/8ec084e6-ca11-47b8-98f0-4d7d8ce18b42)
+![Image](https://github.com/fe-Jay/weatherSPA/blob/main/public/assets/img/readme-2.gif)
 
 <br/>
 
@@ -54,7 +54,7 @@ const submitForm = (event) => {
 
 <br/>
 
-![Image](https://github.com/JAYCODE-git/testRepo/assets/22652668/18798b45-ee3e-4a78-b13a-cdb4c13450ba)
+![Image](https://github.com/fe-Jay/weatherSPA/blob/main/public/assets/img/readme-1.gif)
 
 <br/>
 
@@ -105,7 +105,9 @@ const weatherData = resultForecast.list.filter((item) => {
 
 <br/>
 
-![Image](https://github.com/JAYCODE-git/testRepo/assets/22652668/602a1c84-0b06-4a2d-9a47-020f258f1520)
+![Image](https://github.com/fe-Jay/weatherSPA/blob/main/public/assets/img/readme-3.gif)
+![Image](https://github.com/fe-Jay/weatherSPA/blob/main/public/assets/img/readme-4.gif)
+
 
 <br/>
 
